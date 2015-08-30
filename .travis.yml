@@ -1,6 +1,7 @@
 language: ruby
 before_install:
   - rvm get head
+  - rvm use jruby-9.0.0.0 --install
 script: "bundle exec rake spec:all"
 rvm:
   - jruby
