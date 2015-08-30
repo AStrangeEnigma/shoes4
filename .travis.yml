@@ -1,4 +1,6 @@
 language: ruby
+before_install:
+  - rvm get head
 script: "bundle exec rake spec:all"
 rvm:
   - jruby
